@@ -3,6 +3,7 @@ from time import sleep
 def get_user_guess():
     guess = int(input("Guess a number: "))
     return guess
+
 def roll_dice(number_of_sides):
     first_roll = randint(1,number_of_sides)
     second_roll = randint(1,number_of_sides)

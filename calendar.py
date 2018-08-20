@@ -1,6 +1,10 @@
 from time import sleep, strftime
+
 USER_FIRST_NAME = "DUY"
+
 calendar = {}
+
+
 def welcome():
     print("Welcome " + USER_FIRST_NAME + ".")
     print("Calendar openned")
@@ -8,6 +12,7 @@ def welcome():
     print("Today is: " + strftime("%A %B %d %Y"))
     print("Current time is: " + strftime("%H %M %S"))
     print("What would you like to do")
+
 
 def start_calendar():
     welcome()
@@ -19,6 +24,7 @@ def start_calendar():
                 print("calendar is empty.")
             else:
                 print(calendar)
+
         elif user_choice == "A":
             date = input("Enter date (MM/DD/YYYY): ")
             event = input("Enter event: ")
@@ -33,6 +39,7 @@ def start_calendar():
                     start = False
             else:
                 print(calendar)
+
         elif user_choice == "D":
             if len(calendar) < 1:
                 print("Calendar is empty")
@@ -45,10 +52,12 @@ def start_calendar():
                         break
                     else:
                         print("Incorrect event")
+
         elif user_choice == "X":
             start = False
+
         else:
             print("Invalid command!")
             start = False
-start_calendar()
 
+start_calendar()

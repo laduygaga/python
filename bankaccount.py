@@ -1,22 +1,28 @@
 class BankAccount(object):
+
     balance = 0
+    
     def __init__(self,name):
         self.name = name
 
+    
     def __repr__(self):
         return("%s' account. Balance: $%.2f" % (self.name, self.balance))
 
     def show_balance(self):
         print("Balance: $%.2f" % self.balance)
 
+
     def deposit(self, amount):
         if amount <= 0:
             print("Number of money is invalid")
             return
+
         else:
             print("You deposited: %.2f" % amount)
             self.balance += amount
             self.show_balance()
+
 
     def withdraw(self, amount):
         if amount >= self.balance:
@@ -26,6 +32,7 @@ class BankAccount(object):
             print("You withdraw: %.2f" % amount) 
             self.balance -= amount
             self.show_balance()
+
 
 my_account = BankAccount("Duy")
 print(my_account)
