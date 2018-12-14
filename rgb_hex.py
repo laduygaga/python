@@ -1,14 +1,14 @@
 def rgb_hex():
   invalid_msg = "Invalid error"
-  red = int(input("Enter a red value (0>255): "))
+  red = int(input("Enter a red value (>0, and <255): "))
   if red < 0 or red > 255:
     print(invalid_msg)
     return
-  green = int(input("Enter a green value (0>255): "))
+  green = int(input("Enter a green value (>0, and <255): "))
   if green < 0 or green > 255:
     print(invalid_msg)
     return
-  blue = int(input("Enter a blue value (0>255): "))
+  blue = int(input("Enter a blue value (>0, and <255)5: "))
   if blue < 0 or blue > 255:
     print(invalid_msg)
     return
