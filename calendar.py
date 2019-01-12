@@ -18,7 +18,8 @@ def start_calendar():
     welcome()
     start = True
     while start is True:
-        user_choice = input("Enter A to Add, V to view, D to Delete, X to Exit: ").upper()
+        user_choice = input("Enter A to Add, V to view, \
+                            D to Delete, X to Exit: ").upper()
         if user_choice == "V":
             if len(calendar) < 1:
                 print("calendar is empty.")
