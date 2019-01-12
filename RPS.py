@@ -1,12 +1,12 @@
 from random import randint
 options = ["ROCK", "PAPER", "SCISSORS"]
-message = {"tie":"Yawn it's a tie!", 
-           "won":"Yay you won!", 
-           "lost":"Aww you lost!"}
+message = {"tie": "Yawn it's a tie!",
+           "won": "Yay you won!",
+           "lost": "Aww you lost!"}
 
 
 def decide_winner(user_choice, computer_choice):
-    print("Your choice is : %s "  % user_choice)
+    print("Your choice is : %s " % user_choice)
     print("Computer choice is: %s " % computer_choice)
     if user_choice == computer_choice:
         print(message["tie"])

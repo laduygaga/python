@@ -17,7 +17,7 @@ def welcome():
 def start_calendar():
     welcome()
     start = True
-    while start == True:
+    while start is True:
         user_choice = input("Enter A to Add, V to view, D to Delete, X to Exit: ").upper()
         if user_choice == "V":
             if len(calendar) < 1:
@@ -28,8 +28,8 @@ def start_calendar():
         elif user_choice == "A":
             date = input("Enter date (MM/DD/YYYY): ")
             event = input("Enter event: ")
-            calendar[date] = event 
-            if len(date) > 10 or int(date[6:]) < int(strftime("%Y")): 
+            calendar[date] = event
+            if len(date) > 10 or int(date[6:]) < int(strftime("%Y")):
                 print("A date format MM/DD/YYYY")
                 print("Year is invalid.")
                 try_again = input("Try again? Y for Yes, N for No: ").upper()
@@ -59,5 +59,6 @@ def start_calendar():
         else:
             print("Invalid command!")
             start = False
+
 
 start_calendar()
