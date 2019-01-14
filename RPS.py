@@ -13,7 +13,7 @@ def decide_winner(user_choice, computer_choice):
 
     elif (user_choice == options[0] and computer_choice == options[2]) \
             or (user_choice == options[1] and computer_choice == options[0]) \
-            or (user_choice == options[2] and cumputer_choice == options[1]):
+            or (user_choice == options[2] and computer_choice == options[1]):
         print(message["won"])
 
     else:
