@@ -1,0 +1,37 @@
+# Row to Col
+array.transpose()
+
+# Swap col
+array[:,[a,b]] = array[:,[b,a]]
+
+# Insert Row
+np.append(a,[[Row]],0)
+
+# Insert Col
+p.insert(a, [index of col],[[col]])
+
+# Delete row
+newArray = delete(oldArray, [index of row], 0)
+
+# Delete col
+newArray = delete(oldArray, [index of col], 1)
+
+## SET
+# Add
+set.add()
+
+# Remove
+set.discard()
+
+# Union sets (Contain all of each set)
+unionSet = setA | setB
+
+# Intersection of sets ( have in A and in B)
+intersectionSet = setA & setB
+
+# Difference of sets (have in setA, not in setB)
+difference = setA - setB
+
+# Compare sets ( Check wether A is subset of B)
+isSubSet = setA <= setB # if A is subset of B : return True;else return False
+
