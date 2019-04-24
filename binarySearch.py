@@ -1,4 +1,5 @@
 def binarySearch(itemsList, item):
+    itemsList.sort()
     first = 0
     last = len(itemsList) - 1
     found = False
