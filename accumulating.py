@@ -1,6 +1,9 @@
 def f(list):
-    l = []
-    l.append(list[0])
+    lst = []
+    lst.append(list[0])
     for i in list[1:]:
-        l.append(l[-1]*i)
-    return l
+        lst.append(lst[-1]*i)
+    return lst
+
+
+print(f(list(map(lambda x: int(x), input().split()))))
