@@ -32,6 +32,14 @@ intersectionSet = setA & setB
 # Difference of sets (have in setA, not in setB)
 difference = setA - setB
 
-# Compare sets ( Check wether A is subset of B)
+# CompA.dot(B)re sets ( Check wether A is subset of B)
 isSubSet = setA <= setB # if A is subset of B : return True;else return False
 
+# Create random matrix
+np.random.rand(m,n,p...)
+
+# Det: 
+np.linalg.det(MATRIX)
+
+# Dot
+A.dot(B)
