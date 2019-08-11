@@ -1,7 +1,7 @@
 import os
 from time import sleep
 
-f = open('1000PW.txt', 'r')
+f = open('/home/duy/1000PW.txt', 'r')
 a = f.readlines()
 b = ''.join(a)
 c = b.split()
