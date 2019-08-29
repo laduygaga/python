@@ -43,3 +43,6 @@ np.linalg.det(MATRIX)
 
 # Dot
 A.dot(B)
+
+# array to matrix
+a = np.mat(a)
