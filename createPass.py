@@ -1,5 +1,5 @@
 import os
-f = open('/home/duy/birthday.txt','r')
+f = open('/home/duy/gits/python/test/birthday.txt','r')
 l = f.readlines()
 l1 = ''.join(i for i in l)
 l2 = l1.split('\n') 

@@ -8,4 +8,4 @@ c = b.split()
 for i in c:
     print(c.index(i), i)
     os.system('goldendict {}'.format(i))
-    sleep(0.5)
+    sleep(1)

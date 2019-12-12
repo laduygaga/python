@@ -4,7 +4,7 @@ import sys
 def stopwatch():
     s = int(sys.argv[1])
     while s>=0:
-        print(s,end ='\r')
+        print(s,' ',end='\r')
         # print(s,sep='')
         sleep(1)
         s -= 1
