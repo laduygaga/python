@@ -15,5 +15,4 @@ def binarySearch(itemsList, item):
     return found
 
 
-print(binarySearch(itemsList=[int(i) for i in input().split()],
-                   item=int(input("item:"))))
+print(binarySearch([i for i in input().split()], input()))
