@@ -14,5 +14,5 @@ def binarySearch(itemsList, item):
                 first = midPoint + 1
     return found
 
-
-print(binarySearch([i for i in input().split()], input()))
+for i in range(10):
+    print(binarySearch([1,2,3,4,5], i))
