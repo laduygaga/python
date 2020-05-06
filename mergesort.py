@@ -23,5 +23,4 @@ def merge(l1,l2):
         merge_list.extend(l2[j:])
     return merge_list
 
-
 print(mergesort([3,2,1,4,5]))
