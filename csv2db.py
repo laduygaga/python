@@ -20,7 +20,7 @@ cursor.execute("CREATE TABLE categories (id bigint not null auto_increment prima
 with open('categories.csv') as csv_file: 
     csv_data = csv.reader(csv_file, delimiter=',')
     for row in csv_data:
-        cursor.execute('INSERT INTO categories (category_id, parent_id, path, name, include_in_menu, meta_title, meta_description, url_key, url_path, Smartweb_ID) VALUES ("%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s")', row)
+        cursor.execute("INSERT INTO categories (category_id, parent_id, path, name, include_in_menu, meta_title, meta_description, url_key, url_path, Smartweb_ID) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s)", row)
 
 
 mydb.commit()
